@@ -17,3 +17,4 @@
 console.log(typeof "shaharyar")     //-------->String 
 console.log(typeof null)     //--------->Object
 console.log(typeof undefined)
+console.log(typeof(accountEmail))   //--------->String
