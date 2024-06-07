@@ -20,16 +20,23 @@
 </body>
 <script>
     document.getElementById('owl').onclick = function(){
-        alert("owl clicked")
+        console.log("owl clicked")
+     
     } 
+    // document.querySelector('#owl').onclick = function(){
+    //     alert("owl clicked")
+     
+    // } //provide less features
 
-
+    //Events
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
      
-    //  Capturing Event , Bubling Event   (Third parameter)
+    //  Capturing Event , Bubling Event   (Third parameter tell the its bubling or capturing)
+    // capturing -> outside to inside  (True)
+    // bubling ->inside to outside (False)
 
     document.getElementById('images').addEventListener('click', function(e){
         console.log("clicked inside the ul");
@@ -37,16 +44,16 @@
 
     document.getElementById('owl').addEventListener('click', function(e){
         console.log("owl clicked");
-        e.stopPropagation()   //inside to outside
+        e.stopPropagation()   //inside to outside (Bubbling stop)
     }, false)
     
     document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
-        e.stopPropagation()
+        e.preventDefault();  // stop to nav to google.com
+        e.stopPropagation() //stop the propogation
         console.log("google clicked");
     }, false)
    
-    
+    // Delete the  image on click
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
@@ -57,7 +64,6 @@
     
         
     })
-    
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
