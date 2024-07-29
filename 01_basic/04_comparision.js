@@ -8,6 +8,13 @@ console.log(null >= 0)  //convert null to 0 //true
 
 console.log(undefined > 0)//false 
 console.log(undefined == 0)//false
+
+/*
+the reseason is that equality check == and comparision work  differently
+comparision convert null to a number treating it as 0
+thats why null >= 0 is true
+*/
+
 console.log(undefined >= 0)  //false
  
 //      ===    check both value and data type 
