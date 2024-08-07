@@ -48,8 +48,10 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser)); // will return all  the keys in array format [id,name,isLoggedIn]
+
+// console.log(Object.values(tinderUser));  //wiil return all the values of tinderUser object
+
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));

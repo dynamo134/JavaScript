@@ -19,7 +19,7 @@ const JsUser = {
 
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
-// console.log(JsUser["full name"])
+// console.log(JsUser["full name"])  //cannot access with dot 
 // console.log(JsUser[mySym])
 
 JsUser.email = "alam@chatgpt.com"

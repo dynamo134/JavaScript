@@ -12,19 +12,19 @@ console.log(myArr[1]);  //1
 // myArr.push(7)
 // myArr.pop()
 
-// myArr.unshift(9)  //shift from the front of the array   //9 0 1 2 3 4 5 
+// myArr.unshift(9)  //push from the front of the array   //9 0 1 2 3 4 5 
 // myArr.shift()     //remove from the front //1 2 3 4 5
 
 console.log(myArr.includes(9));  //false
 console.log(myArr.indexOf(3));  //3  if not exixt theit will return -1
 
-// const newArr = myArr.join()
+// const newArr = myArr.join()  //convert to string
 
 // console.log(myArr);    //[0,1,2,3,4,5]
-// console.log( newArr);   //0,1,2,3,4,5
+// console.log( newArr);   //0,1,2,3,4,5  //string
 
 
-// slice  -> [ ) 
+// slice  -> [ )   copy and  print a section of array
 //splice -> []  manupulate the original array
 
 console.log("A ", myArr);
@@ -35,8 +35,8 @@ console.log(myn1);
 console.log("B ", myArr);//[0,1,2,3,4,5]
 
 
-const myn2 = myArr.splice(1, 3)
-console.log("C ", myArr);  //[0,4,5]
+const myn2 = myArr.splice(1, 3)   
+console.log("C ", myArr);  //[0,4,5] //manupulated
 console.log(myn2);
 
 /* -----------------------------------------------------------------------------------------------------------  */
@@ -52,6 +52,8 @@ console.log(marvel_heros[3][1]); //flash
 const allHeros = marvel_heros.concat(dc_heros)
 console.log(allHeros);
 
+
+//spread operator
 const all_new_heros = [...marvel_heros, ...dc_heros]
 
 // console.log(all_new_heros);
